@@ -16,15 +16,14 @@ public class ProductoRepositorioInseguro {
                 + "WHERE nombre = '" + nombreBuscado + "'";
         List<Producto> resultado = new ArrayList<>();
         try (Connection con = Conexion.abrir();
-             Statement st = con.createStatement();
-             ResultSet rs = st.executeQuery(sql)) {
+                Statement st = con.createStatement();
+                ResultSet rs = st.executeQuery(sql)) {
             while (rs.next()) {
                 resultado.add(new Producto(
                         rs.getLong("id"),
                         rs.getString("nombre"),
                         rs.getBigDecimal("precio"),
-                        rs.getInt("stock")
-                ));
+                        rs.getInt("stock")));
             }
         }
         return resultado;
