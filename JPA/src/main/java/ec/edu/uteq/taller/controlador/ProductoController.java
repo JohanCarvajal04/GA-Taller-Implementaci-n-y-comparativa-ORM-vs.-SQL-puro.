@@ -11,12 +11,6 @@ import org.springframework.web.bind.annotation.*;
 import java.util.List;
 import java.util.Map;
 
-/**
- * Expone como REST los mismos tres endpoints minimos que pide el
- * Alcance funcional de la guia (listar, crear, eliminar), mas dos
- * endpoints de apoyo para la parte de medicion y para la demo de
- * (no) inyeccion SQL de la seccion 5.
- */
 @RestController
 @RequestMapping("/api/productos")
 public class ProductoController {

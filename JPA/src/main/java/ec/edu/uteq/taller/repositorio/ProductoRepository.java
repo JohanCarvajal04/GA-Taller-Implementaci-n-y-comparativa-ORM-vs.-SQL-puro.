@@ -5,10 +5,6 @@ import org.springframework.data.jpa.repository.JpaRepository;
 
 import java.util.List;
 
-/**
- * JpaRepository ya trae implementados findAll(), save(...),
- * deleteById(...), existsById(...), etc. No escribimos SQL a mano.
- */
 public interface ProductoRepository extends JpaRepository<Producto, Long> {
 
     // Consulta derivada: Spring Data genera el SQL a partir del nombre

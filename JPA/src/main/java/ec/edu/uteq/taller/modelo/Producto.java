@@ -9,11 +9,6 @@ import jakarta.persistence.Table;
 
 import java.math.BigDecimal;
 
-/**
- * Entidad JPA que mapea la tabla 'productos' (la misma tabla y los
- * mismos 100 registros que usa el modulo taller-jdbc-puro, sembrada en
- * el Paso 3 de la guia).
- */
 @Entity
 @Table(name = "productos")
 public class Producto {

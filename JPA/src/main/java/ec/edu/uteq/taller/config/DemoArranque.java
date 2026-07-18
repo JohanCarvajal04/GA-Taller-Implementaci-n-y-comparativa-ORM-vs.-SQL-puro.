@@ -11,15 +11,6 @@ import org.springframework.util.StopWatch;
 import java.math.BigDecimal;
 import java.util.List;
 
-/**
- * Reproduce en consola, al arrancar la aplicacion, la misma secuencia
- * de demo/medicion que el Main.java del modulo taller-jdbc-puro
- * (Paso 16 de la guia), pero pasando siempre por la capa de servicio
- * en lugar de llamar al repositorio directamente. Se puede desactivar
- * con la propiedad 'taller.demo.enabled=false' en application.properties
- * si solo quieres usar la API REST (por ejemplo, para probarla con
- * Postman) sin que se ejecute esta demo en cada arranque.
- */
 @Component
 public class DemoArranque implements CommandLineRunner {
 
